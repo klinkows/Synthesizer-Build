@@ -67,6 +67,14 @@ def main(args):
 			
 		print("DONE")
 		return outputBuffer
+
+	def QuadraticFourier(x):
+		f = (math.pi**2)/3
+
+		for n in range(1,10):
+			f += 4*((-1)**n)/(n*n)*np.cos(n*x)
+
+		return f	
 	
 	def QuadWave(p,v,d):
 		
